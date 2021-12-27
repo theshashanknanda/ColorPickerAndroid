@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
                 int g_new = (int) (255*g/1);
                 int b_new = (int) (255*b/1);
 
-                binding.r.setText(String.valueOf(r_new));
-                binding.g.setText(String.valueOf(g_new));
-                binding.b.setText(String.valueOf(b_new));
+                binding.r.setText(String.valueOf("R: " + r_new));
+                binding.g.setText(String.valueOf("G: " + g_new));
+                binding.b.setText(String.valueOf("B: " + b_new));
 
                 binding.redSeekbar.setProgress(r_new);
                 binding.greenSeekbar.setProgress(g_new);
